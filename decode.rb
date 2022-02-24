@@ -58,7 +58,7 @@ def decode_char(ch)
   end
 end
 
-puts decode_char(".-")
+puts decode_char('.-')
 
 # decode_word method
 def decode_word(str)
@@ -69,7 +69,7 @@ def decode_word(str)
   res
 end
 
-puts decode_word("-- -.--")
+puts decode_word('-- -.--')
 
 # decode method
 def decode(str)
