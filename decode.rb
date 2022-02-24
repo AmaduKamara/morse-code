@@ -72,3 +72,13 @@ end
 puts decode_word("-- -.--")
 
 # decode method
+def decode(str)
+  res = ''
+  str.split('   ').each do |item|
+    res += " #{decode_word(item)}"
+  end
+  res.strip
+end
+
+puts decode('-- -.--   -. .- -- .')
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
