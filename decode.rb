@@ -1,4 +1,3 @@
-# decode_char method
 def decode_char(ch)
   case ch
   when '.-'
@@ -58,8 +57,6 @@ def decode_char(ch)
   end
 end
 
-puts decode_char('.-')
-
 def decode_word(str)
   res = ''
   str.split.each do |item|
@@ -67,8 +64,6 @@ def decode_word(str)
   end
   res
 end
-
-puts decode_word('-- -.--')
 
 def decode(str)
   res = ''
@@ -78,5 +73,7 @@ def decode(str)
   res.strip
 end
 
+puts decode_char('.-')
+puts decode_word('-- -.--')
 puts decode('-- -.--   -. .- -- .')
 puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
