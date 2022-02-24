@@ -60,7 +60,6 @@ end
 
 puts decode_char('.-')
 
-# decode_word method
 def decode_word(str)
   res = ''
   str.split.each do |item|
@@ -71,7 +70,6 @@ end
 
 puts decode_word('-- -.--')
 
-# decode method
 def decode(str)
   res = ''
   str.split('   ').each do |item|
